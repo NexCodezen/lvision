@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L Vision - Câmeras e Manutenções</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVdWrYB/PCQLjlBPPU2yvffSGgwz/cHTQjD0TyV7veGasqFmNVDDGMHQ8/QLH4qqK4UrSEvANmU3s6I7W7AHow=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <a href="#hero" class="logo-link">
+        <img
+          src="logo_lvision.png"
+          alt="Logo L Vision"
+          class="logo"
+          width="80"
+          height="80"
+        />
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <h1>Sua Segurança em Foco</h1>
+        <p>
+          Especialista em Câmeras e Manutenções. Alex Belarmino (Leleu) garante
+          qualidade na instalação, configuração e reparo de sistemas de
+          segurança eletrônica.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://wa.me/558393139489?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20instala%C3%A7%C3%A3o%20%2F%20manuten%C3%A7%C3%A3o%20de%20c%C3%A2meras."
+            class="btn btn-whatsapp"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp - Entrar em contato"
+            ><i class="fab fa-whatsapp"></i> WhatsApp</a
+          >
+          <a
+            href="https://vscode-344949fb-8a3f-4270-87a9-6d6e52d233d1.preview.emergentagent.com/"
+            class="btn btn-instagram"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram - Perfil"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="service-cards">
+          <article class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/565/565547.png"
+              alt="Ícone Instalação"
+              class="service-icon"
+              loading="lazy"
+            />
+            <h3>Instalação de Câmeras (CFTV)</h3>
+            <p>Montagem e posicionamento estratégico para máxima cobertura.</p>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/841/841364.png"
+              alt="Ícone manutenção"
+              class="service-icon"
+              loading="lazy"
+            />
+            <h3>Manutenção e Reparo</h3>
+            <p>Revisão, ajustes e consertos para garantir o funcionamento ideal.</p>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/609/609803.png"
+              alt="Ícone configuração remota"
+              class="service-icon"
+              loading="lazy"
+            />
+            <h3>Configuração Remota</h3>
+            <p>Acesso e monitoramento pelo celular/PC para sua tranquilidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact-section">
+      <div class="container contact-container">
+        <h2 class="section-title">Contato</h2>
+        <p><strong>Alex Belarmino (Leleu)</strong></p>
+        <p>
+          <strong>Telefone/WhatsApp:</strong>
+          <a href="tel:+558393139489" class="contact-link">+55 (83) 9313-9489</a>
+        </p>
+        <p>
+          <strong>E-mail:</strong>
+          <a href="mailto:visionassitencia@gmail.com" class="contact-link"
+            >visionassitencia@gmail.com</a
+          >
+        </p>
+
+        <!-- Formulário opcional -->
+        <form class="contact-form" action="#" method="POST" onsubmit="alert('Obrigado pelo contato! Em breve responderemos.'); return false;">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 L Vision. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a.nav-link').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
